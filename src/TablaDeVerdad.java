@@ -1,14 +1,14 @@
 public class TablaDeVerdad {
 
     public static void main(String[] args) {
-        System.out.println("A\tB\tA AND B\tA OR B\tNOT A");
-        System.out.println("---------------------------------------");
-        boolean[] valores = {true, false};
-        for (boolean A : valores) {
-            for (boolean B : valores) {
-                System.out.printf("%b\t%b\t%b\t%b\t%b%n", A, B, A && B, A || B, !A);
-            }
-        }
+        System.out.println("Tabla de Verdad para A or B\n");
+        System.out.println("---------------------");
+        System.out.println("A      B      A or B");
+        System.out.println("---------------------");
+        System.out.println("true | true  |" + (true || true));
+        System.out.println("true | false |" + (true || false));
+        System.out.println("false| true  |" + (false || true));
+        System.out.println("false| false |" + (false || false));
+       
     }
-
 }
