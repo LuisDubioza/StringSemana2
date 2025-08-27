@@ -1,5 +1,6 @@
 public class Snoopy {
     public static void main(String[] args) {
+        System.out.println("Snoopy original");
         String snoopy = 
             "                             -+::::::++:::            \n" +
             "                          +:-*@@@@@@@@--::        \n" +
@@ -31,5 +32,9 @@ public class Snoopy {
             "                 ::++::::::::::+::                ";
 
         System.out.println(snoopy);
+
+        System.out.println("Snoopy modificado"); //69 hasta la 4ta linea + 12 -1 = 80
+        StringBuilder SnoopyModificado = new StringBuilder(snoopy);
+        SnoopyModificado.setCharAt(80, '@');
     }
 }
